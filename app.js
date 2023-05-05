@@ -4,10 +4,10 @@ const routerTicket = require("./rotas/tickets")
 
 const app = express()
 
-const port = 8000
+const port = 3000
 
 
-app.use('/tickets', routerTicket)
+app.use('/tickets/:ano/:mes', routerTicket) 
 
 
 app.listen(port, () => {

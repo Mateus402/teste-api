@@ -3,6 +3,6 @@ const { getTickets } = require("../controller/TicketController")
 
 const router = Router()
 
- router.get('/', getTickets)
-
+router.get('/', getTickets);
+ 
 module.exports = router
