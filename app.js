@@ -1,17 +1,13 @@
 const express = require("express")
 
-const routerAluno = require("./rotas/aluno")
+const routerTicket = require("./rotas/tickets")
 
 const app = express()
 
 const port = 8000
 
 
-
-app.use('/aluno', routerAluno)
-
-
-
+app.use('/tickets', routerTicket)
 
 
 app.listen(port, () => {
